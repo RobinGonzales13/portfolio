@@ -13,23 +13,43 @@ header {
     text-align: center;
 }
 
+nav {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
 nav ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    float: left;
 }
 
 nav ul li a {
+    display: block;
     color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    background-color: #111;
+}
+
 main {
-    padding: 20px;
+    padding: 80px 20px 20px; /* Adding padding-top to ensure content is not hidden behind the fixed navbar */
+}
+
+section {
+    margin-bottom: 50px;
 }
 
 footer {
@@ -45,4 +65,12 @@ footer {
 .dark-mode {
     background-color: #333;
     color: white;
+}
+
+.dark-mode nav {
+    background-color: #111;
+}
+
+.dark-mode footer {
+    background-color: #111;
 }
