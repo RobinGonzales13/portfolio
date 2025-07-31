@@ -104,7 +104,6 @@ portfolio.github.io/
 │   └── workflows/
 │       └── deploy.yml          # GitHub Actions deployment
 ├── public/
-│   └── vite.svg               # Favicon
 ├── src/
 │   ├── App.jsx                # Main application component
 │   ├── App.css                # Global styles and Tailwind imports

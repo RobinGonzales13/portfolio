@@ -72,9 +72,7 @@ function App() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <button className="nav-button" onClick={() => scrollToSection('about')}>About Me</button>
-              <button className="nav-button">Work</button>
-              <button className="nav-button">Resume</button>
-              <button className="nav-button">Contact</button>
+              <button className="nav-button" onClick={() => scrollToSection('work')}>Work</button>
             </motion.div>
           </div>
         </div>
@@ -177,7 +175,7 @@ function App() {
                         },
                         {
                           year: "2022-PRESENT",
-                          title: "Freelance - Storyboard Artist/Art Director",
+                          title: "Freelance - Art Director/Storyboard Artist",
                           description: "Led visual development and storytelling across multimedia projects. Drawn detailed storyboards, directed visual style, and aligned creative vision with client goals.",
                         },
                       ].map((item, index) => (
