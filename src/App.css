@@ -516,7 +516,7 @@ video {
   flex: 1 1 40px;
   height: 2px;
   background-color: #db4426;
-  max-width: 100px;
+  max-width: 70vw;
 }
 
 .section-title-highlight {
@@ -589,7 +589,7 @@ video {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.247);
   overflow: hidden;
   transition: transform 0.3s ease;
-  height: 40vh;
+  height: 45vh;
 }
 
 .work-slide:hover {
@@ -788,6 +788,163 @@ video {
 
 .modal-next {
   right: 1rem;
+}
+
+/* Work Grid */
+.work-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Company Section */
+.work-company {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.work-company-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.work-company-logo {
+  width: 100px;
+  height: auto;
+}
+
+.work-company-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Media Grid */
+.work-media-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Divide the grid into 5 equal columns */
+  gap: 1rem; /* Add spacing between items */
+  justify-content: start; /* Align items to the left */
+  margin-top: 1rem;
+}
+
+.work-media-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure content doesn't overflow */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.work-media-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.work-media-image,
+.work-media-video {
+  max-width: 100%; /* Ensure media fits within the container */
+  max-height: 250px; /* Limit the height of media */
+  object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+  border-radius: 8px;
+}
+
+/* Pagination Controls */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.pagination-button {
+  background: #db4426;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.pagination-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background: #b5361f;
+  transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact-section {
+  background: #f2eae5;
+  padding: 3rem 1.5rem;
+  border-radius: 2rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.contact-section .section-title {
+  margin-bottom: 2rem;
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.contact-email-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-email {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.copy-button {
+  background: #db4426;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.copy-button:hover {
+  background: #b5361f;
+  transform: scale(1.05);
 }
 
 @media (max-width: 1400px) {

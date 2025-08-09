@@ -73,6 +73,7 @@ function App() {
             >
               <button className="nav-button" onClick={() => scrollToSection('about')}>About Me</button>
               <button className="nav-button" onClick={() => scrollToSection('work')}>Work</button>
+              <button className="nav-button" onClick={() => scrollToSection('contact')}>Contact Me</button>
             </motion.div>
           </div>
         </div>
@@ -95,7 +96,7 @@ function App() {
                   <span className="name-highlight">ROBIN</span> GONZALES
                 </h1>
                 <p className="main-subtitle">
-                  Crafting bold visual stories with purpose and precision.
+                  Crafting visual designs with passion, skills, and precision.
                 </p>
               </motion.div>
 
