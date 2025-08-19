@@ -5,8 +5,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "vite build",
+    "test": "echo 'No tests configured'",
+    "eject": "echo 'Not applicable'",
+    "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",

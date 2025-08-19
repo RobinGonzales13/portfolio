@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from "react-intersection-observer";
 import mylogo from './assets/mylogo.png'
 import MainVideo from './assets/Main.mp4'
+import IntroVideo from './assets/intro.mp4'
 import portrait from './assets/portrait.png'
 import Work from './components/Work';
 import './App.css'
@@ -34,10 +35,26 @@ const TimelineItem = ({ year, title, description }) => {
 
 function App() {
   const [isVisible, setIsVisible] = useState(false)
+  const introVideoRef = useRef(null)
+  const [introRef, introInView] = useInView({ triggerOnce: false, threshold: 0.6 })
 
   useEffect(() => {
     setIsVisible(true)
   }, [])
+
+  useEffect(() => {
+    const videoElement = introVideoRef.current
+    if (!videoElement) return
+    if (introInView) {
+      const playPromise = videoElement.play()
+      if (playPromise && typeof playPromise.then === 'function') {
+        playPromise.catch(() => {})
+      }
+    } else {
+      videoElement.pause()
+      videoElement.currentTime = 0
+    }
+  }, [introInView])
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
@@ -134,6 +151,21 @@ function App() {
             viewport={{ once: true }}
             className="about-content"
           >
+            {/* Video Introduction */}
+            <div className="about-intro-video" ref={introRef}>
+              <div className="intro-video-frame">
+                <video
+                  ref={introVideoRef}
+                  className="intro-video"
+                  src={IntroVideo}
+                  controls
+                  muted
+                  playsInline
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
             <div className="about-layout">
               {/* Left Side - Profile Picture */}
               <motion.div
