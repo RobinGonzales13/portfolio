@@ -203,12 +203,12 @@ function App() {
                       {[
                         {
                           year: "2020-2022",
-                          title: "Freelance - Motion Graphic Designer",
+                          title: "Instructional Design - E-Learning - Motion Graphic Designer",
                           description: "Developed dynamic motion graphics and visual assets for eLearning modules, corporate presentations, and explainer videos. Enhanced learning retention through clear visual communication and animation.",
                         },
                         {
                           year: "2022-PRESENT",
-                          title: "Freelance - Multimedia Designer",
+                          title: "Instructional Design - E-Learning - Multimedia Designer",
                           description: "Directed visual storytelling and instructional sequences for multimedia projects. Created storyboards, designed visuals, and collaborated with educators and clients to align creative direction with learning objectives.",
                         },
                       ].map((item, index) => (
