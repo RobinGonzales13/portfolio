@@ -193,7 +193,7 @@ function App() {
                   <div className="about-intro">
                     <h3 className="about-name">Hello there! <span className="highlight">I'm Robin Gonzales</span></h3>
                     <p className="about-role">Professional Multimedia Designer from the Philippines.<br></br>
-                      Aiming to bring ideas to life through storytelling and thoughtful design.</p>
+                      Aiming to bring ideas to life using visual design.</p>
                   </div>
 
                   {/* Timeline of Experience */}
@@ -203,13 +203,13 @@ function App() {
                       {[
                         {
                           year: "2020-2022",
-                          title: "Freelance - Motion Graphic Artist",
-                          description: "Created engaging motion graphics for Corporate Videos, Explainer Videos, Youtube Videos, and Advertisements.",
+                          title: "Freelance - Motion Graphic Designer",
+                          description: "Developed dynamic motion graphics and visual assets for eLearning modules, corporate presentations, and explainer videos. Enhanced learning retention through clear visual communication and animation.",
                         },
                         {
                           year: "2022-PRESENT",
-                          title: "Freelance - Art Director/Storyboard Artist",
-                          description: "Led visual development and storytelling across multimedia projects. Drawn detailed storyboards, directed visual style, and aligned creative vision with client goals.",
+                          title: "Freelance - Multimedia Designer",
+                          description: "Directed visual storytelling and instructional sequences for multimedia projects. Created storyboards, designed visuals, and collaborated with educators and clients to align creative direction with learning objectives.",
                         },
                       ].map((item, index) => (
                         <motion.div
@@ -235,9 +235,9 @@ function App() {
                   <div className="about-skills">
                     <h4 className="section-heading">Skills</h4>
                     <ul className="skills-list">
-                      <li><strong>Digital Art:</strong> Storyboard, Illustration, Concept Design</li>
-                      <li><strong>Animation:</strong> 2D Animation, 3D Animation, Frame by Frame</li>
-                      <li><strong>Visual Design:</strong> Web Design, UI/UX, Logo Design</li>
+                      <li><strong>Instructional Design:</strong> eLearning Development, Storyboarding, Visual Scripting</li>
+                      <li><strong>Multimedia Design:</strong> Motion Graphics, Animation, Illustration</li>
+                      <li><strong>eLearning Tools:</strong> Articulate Storyline, Adobe Creative Suite, Learning Management Systems (LMS)</li>
                     </ul>
                   </div>
                 </div>
