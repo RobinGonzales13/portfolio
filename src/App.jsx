@@ -3,7 +3,6 @@ import { motion, useAnimation } from 'framer-motion'
 import { useInView } from "react-intersection-observer";
 import mylogo from './assets/mylogo.png'
 import MainVideo from './assets/Main.mp4'
-import IntroVideo from './assets/intro.mp4'
 import portrait from './assets/portrait.png'
 import Work from './components/Work';
 import './App.css'
@@ -151,21 +150,6 @@ function App() {
             viewport={{ once: true }}
             className="about-content"
           >
-            {/* Video Introduction */}
-            <div className="about-intro-video" ref={introRef}>
-              <div className="intro-video-frame">
-                <video
-                  ref={introVideoRef}
-                  className="intro-video"
-                  src={IntroVideo}
-                  controls
-                  muted
-                  playsInline
-                >
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
             <div className="about-layout">
               {/* Left Side - Profile Picture */}
               <motion.div
