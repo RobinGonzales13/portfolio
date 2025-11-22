@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
-import { FaArrowLeft, FaArrowRight, FaTimes } from 'react-icons/fa'; // Import icons
+import { FaArrowLeft, FaArrowRight, FaTimes } from 'react-icons/fa';
 
 import dfaLogo from '../assets/dfa_logo.png';
 import bdoLogo from '../assets/bdo_logo.png';
@@ -78,30 +78,40 @@ import doj4 from '../assets/doj4.png';
 import doj5 from '../assets/doj5.png';
 import doj6 from '../assets/doj6.png';
 
+import mayb1 from '../assets/maybelline_1.mp4';
+import mayb2 from '../assets/maybelline_2.jpg';
+
+//Add here
+
 const workItems = [
+  {
+    title: 'Motion Graphics',
+    media: [mayb1,mayb2],
+    description: 'Motion Graphics work for assorted clients',
+  },
   {
     title: 'Banco De Oro Philippines',
     logo: bdoLogo,
     media: [bdoVideo1,bdoPic1,bdoPic2,bdoPic3,bdoPic4],
-    description: 'Storyboard work for the Department of Foreign Affairs',
+    description: 'Storyboard work for BDO',
   },
   {
     title: 'Maxicare',
     logo: maxicareLogo,
     media: [maxi1, maxi2, maxi3, maxi4, maxi5, maxi6, maxi7, maxi8],
-    description: 'Storyboard work for the Maxicare asodjaso pkasdkas [pokasd aks[dk as[pdkas [sd kasdp',
+    description: 'Storyboard work for the Maxicare',
   },
   {
     title: 'Metrobank',
     logo: metrobankLogo,
     media: [metro1, metro2, metro3, metro4, metro5, metro6],
-    description: 'Storyboard work for the Metrobank asodjaso pkasdkas [pokasd aks[dk as[pdkas [sd kasdp',
+    description: 'Storyboard work for the Metrobank',
   },
   {
     title: 'University of the Philippines',
     logo: upLogo,
     media: [up1, up2, up3, up4, up5, up6],
-    description: 'Storyboard work for the University of the Philippines asodjaso pkasdkas [pokasd aks[dk as[pdkas [sd kasdp',
+    description: 'Storyboard work for the University of the Philippines',
   },
   {
     title: 'Department of Foreign Affairs',
@@ -113,7 +123,7 @@ const workItems = [
     title: 'Department of Justice',
     logo: dojLogo,
     media: [doj1, doj2, doj3, doj4, doj5, doj6],
-    description: 'Storyboard work for the Deparment of Justic Philippines asodjaso pkasdkas [pokasd aks[dk as[pdkas [sd kasdp',
+    description: 'Storyboard work for the Deparment of Justic Philippines',
   },
   {
     title: 'First Gen Corporation',
@@ -131,7 +141,7 @@ const workItems = [
     title: 'Ateneo de Manila University',
     logo: ateneoLogo,
     media: [ate1, ate2],
-    description: 'Storyboard work for the Ateneo de Manila University asodjaso pkasdkas [pokasd aks[dk as[pdkas [sd kasdp',
+    description: 'Storyboard work for the Ateneo de Manila University',
   },
   {
     title: 'Bank of the Philippine Islands',

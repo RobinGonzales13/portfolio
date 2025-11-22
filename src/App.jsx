@@ -187,13 +187,13 @@ function App() {
                       {[
                         {
                           year: "2020-2022",
-                          title: "Instructional Design - E-Learning - Motion Graphic Designer",
-                          description: "Developed dynamic motion graphics and visual assets for eLearning modules, corporate presentations, and explainer videos. Enhanced learning retention through clear visual communication and animation.",
+                          title: "Multimedia - Motion Graphic Designer - E-Learning",
+                          description: "Developed dynamic motion graphics and visual assets for eLearning modules, corporate presentations, 3D Animations, 3D Product Motion Design, explainer videos. Enhanced learning retention through clear visual communication and animation.",
                         },
                         {
                           year: "2022-PRESENT",
-                          title: "Instructional Design - E-Learning - Multimedia Designer",
-                          description: "Directed visual storytelling and instructional sequences for multimedia projects. Created storyboards, designed visuals, and collaborated with educators and clients to align creative direction with learning objectives.",
+                          title: "Multimedia - Motion Graphic Designer - E-Learning",
+                          description: "Directed visual storytelling and instructional sequences for multimedia projects. Created storyboards, designed visuals, 3D Animations, 3D Product Motion Design, and collaborated with educators and clients to align creative direction with learning objectives.",
                         },
                       ].map((item, index) => (
                         <motion.div
@@ -219,9 +219,9 @@ function App() {
                   <div className="about-skills">
                     <h4 className="section-heading">Skills</h4>
                     <ul className="skills-list">
-                      <li><strong>Instructional Design:</strong> eLearning Development, Storyboarding, Visual Scripting</li>
-                      <li><strong>Multimedia Design:</strong> Motion Graphics, Animation, Illustration</li>
-                      <li><strong>eLearning Tools:</strong> Articulate Storyline, Adobe Creative Suite, Learning Management Systems (LMS)</li>
+                      <li><strong>Multimedia Design:</strong> Print and digital asset creation</li>
+                      <li><strong>Motion Graphic Design:</strong> 3D, Motion Graphics, Animation, Illustration, Storyboarding</li>
+                      <li><strong>eLearning Design:</strong> eLearning Development, Storyboarding, Visual Scripting, Articulate Storyline, Adobe Creative Suite, Learning Management Systems (LMS)</li>
                     </ul>
                   </div>
                 </div>
