@@ -17,7 +17,6 @@ import ateneoLogo from '../assets/ateneo_logo.png';
 import dojLogo from '../assets/doj_logo.svg';
 import dictLogo from '../assets/dict_logo.png';
 import pafLogo from '../assets/paf_logo.png';
-import freeLogo from '../assets/freelance_logo.png';
 
 import dfaStoryboard1 from '../assets/dfa_stb1.png';
 import dfaStoryboard2 from '../assets/dfa_stb2.png';
@@ -79,18 +78,9 @@ import doj4 from '../assets/doj4.png';
 import doj5 from '../assets/doj5.png';
 import doj6 from '../assets/doj6.png';
 
-import mayb1 from '../assets/maybelline_1.mp4';
-import mayb2 from '../assets/maybelline_2.jpg';
-
 //Add here
 
 const workItems = [
-  {
-    title: 'Multimedia & Motion Graphic Design',
-    logo: freeLogo,
-    media: [mayb1,mayb2],
-    description: 'Motion Graphics work for assorted clients',
-  },
   {
     title: 'Banco De Oro Philippines',
     logo: bdoLogo,
