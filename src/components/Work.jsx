@@ -79,7 +79,7 @@ import doj5 from '../assets/doj5.png';
 import doj6 from '../assets/doj6.png';
 
 import demoLogo from '../assets/demo_logo.png';
-import demo0 from '../assets/demo_0.png';
+import demo0 from '../assets/demo_0.jpg';
 import demo1 from '../assets/demo_1.mp4';
 
 //Add here
