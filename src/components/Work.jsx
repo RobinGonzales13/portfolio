@@ -78,9 +78,21 @@ import doj4 from '../assets/doj4.png';
 import doj5 from '../assets/doj5.png';
 import doj6 from '../assets/doj6.png';
 
+import demoLogo from '../assets/demo_logo.png';
+import demo0 from '../assets/demo_0.png';
+import demo1 from '../assets/demo_1.mp4';
+import demo2 from '../assets/demo_2.mp4';
+import demo3 from '../assets/demo_3.mp4';
+
 //Add here
 
 const workItems = [
+  {
+    title: 'Demo',
+    logo: demoLogo,
+    media: [demo0, demo1, demo2, demo3],
+    description: 'Demo Work',
+  },
   {
     title: 'Banco De Oro Philippines',
     logo: bdoLogo,
