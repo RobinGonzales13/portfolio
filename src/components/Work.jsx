@@ -88,7 +88,7 @@ import demo3 from '../assets/demo_3.mp4';
 
 const workItems = [
   {
-    title: 'Demo',
+    title: '',
     logo: demoLogo,
     media: [demo0, demo1, demo2, demo3],
     description: 'Demo Work',
